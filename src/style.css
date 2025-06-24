@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "DM Sans";
+  font-display: swap;
+  src: url("assets/fonts/DMSans-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "DM Sans";
+  font-display: swap;
+  src: url("assets/fonts/DMSans-Medium.woff2") format("woff2"),
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "DM Sans";
+  font-display: swap;
+  src: url("assets/fonts/DMSans-Bold.woff2") format("woff2"),
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  font-family: "DM Sans", "Arial", sans-serif;
+  color: #170F49;
+}
+
+
+.color-blue {
+  color: #4A3AFF;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: 0 auto;
+}
+
+@media(max-width: 1023px) {
+  .container {
+    padding: 0 15px;
+  }
+}
