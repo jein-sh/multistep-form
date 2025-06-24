@@ -110,4 +110,17 @@
   .form__progress-item.current ~ .form__progress-item::before {
     width: 0;
   }
+
+  @media(max-width: 539px) {
+    .form__progress {
+      gap: 10px;
+      padding: 0 10px 32px;
+    }
+
+    .form__progress-item:after,
+    .form__progress-item:before {
+      display: none;
+    }
+  }
+
 </style>

@@ -102,6 +102,11 @@
     flex-direction: column;
     padding: 20px 0;
   }
+
+  .header__logo {
+    width: 240px;
+    height: 32px;
+  }
 }
 
 .hero__wrap {

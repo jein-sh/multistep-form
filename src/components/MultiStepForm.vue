@@ -155,6 +155,7 @@
     .form__header {
       flex-direction: column;
       padding: 10px 20px;
+      text-align: center;
     }
 
     .form__step {

@@ -69,11 +69,12 @@
             text-wrap: balance;
         }
 
-        .subscribe label {
+        .subscribe form {
             margin-bottom: 80px;
         }
 
         .subscribe .btn {
+            width: 100%;
             right: auto;
             left: 50%;
             top: auto;
