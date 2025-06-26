@@ -6,7 +6,7 @@
       budget: String
   })
 
-  function handleSubmit() {
+  const handleSubmit = () => {
       const formData = {
           contact: props.contact,
           services: props.services,

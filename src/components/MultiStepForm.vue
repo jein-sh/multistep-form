@@ -38,13 +38,13 @@
     return !validate()
   })
 
-  function nextStep() {
+  const nextStep = () => {
     if (currentStep.value < totalSteps) {
       currentStep.value++
     }
   }
 
-  function prevStep() {
+  const prevStep = () => {
     if (currentStep.value > 1) {
       currentStep.value--
     }
