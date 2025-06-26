@@ -2,10 +2,12 @@
   import { reactive, ref, computed } from 'vue'
   import Button from './ui/Button.vue'
   import ProgressBar from './ProgressBar.vue'
-  import Step1 from './Step1.vue'
-  import Step2 from './Step2.vue'
-  import Step3 from './Step3.vue'
+  import Step from './Step.vue'
   import Finish from './Finish.vue'
+  const iconMan = new URL('@/assets/img/svg/icon-man.svg', import.meta.url).href
+  const iconMail = new URL('@/assets/img/svg/icon-mail.svg', import.meta.url).href
+  const iconPhone = new URL('@/assets/img/svg/icon-phone.svg', import.meta.url).href
+  const iconCompany = new URL('@/assets/img/svg/icon-company.svg', import.meta.url).href
 
   const contact = reactive({
     name: '',
@@ -66,9 +68,40 @@
                   <div class="form__subtitle">Please fill the form below to receive a quote for your project. <br> Feel free to add as much detail as needed.</div>
                   <div class="form__step">
                       <ProgressBar :totalSteps="totalSteps" :currentStep="currentStep" />
-                      <Step1  v-if="currentStep === 1" v-model:contact="contact" />
-                      <Step2  v-if="currentStep === 2" v-model:services="services" />
-                      <Step3  v-if="currentStep === 3" v-model:budget="budget" />
+                      <Step
+                        v-if="currentStep === 1"
+                        title="Contact details"
+                        text="Lorem ipsum dolor sit amet consectetur adipisc."
+                        v-model="contact"
+                        :fields="[
+                          { type: 'input', name: 'name', label: 'Name', placeholder: 'John Carter', iconSrc: iconMan },
+                          { type: 'input', name: 'email', label: 'Email', placeholder: 'Email address', iconSrc: iconMail },
+                          { type: 'input', name: 'phone', label: 'Phone', placeholder: '(123) 456-7890', iconSrc: iconPhone },
+                          { type: 'input', name: 'company', label: 'Company', placeholder: 'Company name', iconSrc: iconCompany },
+                        ]"
+                      />
+                      <Step  v-if="currentStep === 2"
+                        title="Our services"
+                        text="Please select which service you are interested in."
+                        v-model="services"
+                        :fields="[
+                          { type: 'toggle', name: 'development', label: 'Development', iconSrc: './img/icon1.svg' },
+                          { type: 'toggle', name: 'design', label: 'Web Design', iconSrc: './img/icon2.svg' },
+                          { type: 'toggle', name: 'marketing', label: 'Marketing', iconSrc: './img/icon3.svg' },
+                          { type: 'toggle', name: 'other', label: 'Other', iconSrc: './img/icon4.svg' },
+                        ]"
+                      />
+                      <Step  v-if="currentStep === 3"
+                        title="What’s your project budget?"
+                        text="Please select the project budget range you have in mind."
+                        v-model="budget"
+                        :fields="[
+                          { type: 'radio', name: 'budget', value: '$5.000 - $10.000', label: '$5.000 - $10.000' },
+                          { type: 'radio', name: 'budget', value: '$10.000 - $20.000', label: '$10.000 - $20.000' },
+                          { type: 'radio', name: 'budget', value: '$20.000 - $50.000', label: '$20.000 - $50.000' },
+                          { type: 'radio', name: 'budget', value: '$50.000 +', label: '$50.000 +' },
+                        ]"
+                      />
                       <Finish v-if="currentStep === 4" :contact="contact" :services="services" :budget="budget"/>
                   </div>
                   <div class="form__btns">
