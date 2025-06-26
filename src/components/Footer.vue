@@ -170,7 +170,7 @@
         z-index: -1;
         width: 787px;
         height: 787px;
-        background-image: url(img/blob.png);
+        background-image: url(/img/blob.png);
         background-size: cover;
     }
 
