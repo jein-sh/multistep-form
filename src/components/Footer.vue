@@ -1,11 +1,6 @@
 <script setup>
   import Subscribe from './Subscribe.vue'
   import Button from './ui/Button.vue'
-  import logo from '@/assets/img/logo.svg'
-  import logo1 from '@/assets/img/logo1.svg'
-  import logo2 from '@/assets/img/logo2.svg'
-  import footer1 from '@/assets/img/footer1.png'
-  import footer2 from '@/assets/img/footer2.png'
 </script>
 
 <template>
@@ -15,34 +10,34 @@
                 <div class="footer__card card card--blue">
                     <div class="card__info">
                         <div class="card__logo">
-                            <img :src="logo1" alt="logo" />
+                            <img src="/img/logo1.svg" alt="logo" />
                         </div>
                         <div class="card__title">Take a look at our amazing premium Webflow Templates</div>
                         <div class="card__text">Also than having free Webflow cloneables, we create cutting-edge premium Webflow templates too.</div>
                         <a class="card__link" href="https://brixtemplates.com/?utm_source=Figma&utm_medium=Figma+Community&utm_campaign=Figma+Cloneable">Browse templates</a>
                     </div>
                     <div class="card__img">
-                        <img :src="footer1" alt="#" />
+                        <img src="/img/footer1.png" alt="#" />
                     </div>
                 </div>
                 <div class="footer__card card">
                     <div class="card__info">
                         <div class="card__logo">
-                            <img :src="logo2" alt="logo" />
+                            <img src="/img/logo2.svg" alt="logo" />
                         </div>
                         <div class="card__title">Looking to design & develop an amazing  Webflow website?</div>
                         <div class="card__text">If you want to get a hand from the amazing team behind BRIX Templates, get in touch with BRIX Agency today.</div>
                         <a class="card__link" href="https://brixagency.com/figma">Get a quote</a>
                     </div>
                     <div class="card__img">
-                        <img :src="footer2" alt="#" />
+                        <img src="/img/footer2.png" alt="#" />
                     </div>
                 </div>
             </div>
             <div class="footer__bottom">
                 <div class="footer__right">
                     <div class="logo footer__logo">
-                        <img :src="logo" alt="logo" />
+                        <img src="/img/logo.svg" alt="logo" />
                     </div>
                     <div class="footer__copyright">Copyright © BRIX Templates | All Rights Reserved</div>
                 </div>

@@ -14,25 +14,25 @@
             v-model="services.development"
             type="checkbox"
             label="Development"
-            iconSrc="src/assets/img/icon1.svg"
+            iconSrc="./img/icon1.svg"
         />
         <CustomToggle
             v-model="services.design"
             type="checkbox"
             label="Web Design"
-            iconSrc="src/assets/img/icon2.svg"
+            iconSrc="./img/icon2.svg"
         />
         <CustomToggle
             v-model="services.marketing"
             type="checkbox"
             label="Marketing"
-            iconSrc="src/assets/img/icon3.svg"
+            iconSrc="./img/icon3.svg"
         />
         <CustomToggle
             v-model="services.other"
             type="checkbox"
             label="Other"
-            iconSrc="src/assets/img/icon4.svg"
+            iconSrc="./img/icon4.svg"
         />
     </fieldset>                  
 </template>

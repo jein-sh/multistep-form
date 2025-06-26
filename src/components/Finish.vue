@@ -1,5 +1,4 @@
 <script setup>
-  import finishImg from '@/assets/img/finish.svg'
   const props = defineProps({
       contact: Object,
       services: Object,
@@ -21,7 +20,7 @@
 <template>
   <div class="form__finish">
     <div class="form__img">
-      <img :src="finishImg" alt="#" />
+      <img src="/img/finish.svg" alt="#" />
     </div>
     <div class="form__step-title">Submit your quote request?</div>
     <div class="form__step-text">

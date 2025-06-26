@@ -1,6 +1,5 @@
 <script setup>
   import Button from './ui/Button.vue'
-  import logo from '@/assets/img/logo.svg'
 </script>
 
 <template>
@@ -8,7 +7,7 @@
         <div class="container">
             <div class="header__wrap">
                 <div class="logo header__logo">
-                    <img :src="logo" alt="logo" />
+                    <img src="/img/logo.svg" alt="logo" />
                 </div>
                 <Button text="Clone now" />
             </div>
