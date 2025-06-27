@@ -18,7 +18,7 @@
 
 <script setup>
     defineProps({
-        label: { type: String, required: true },
+        label: { type: String, defauult: '' },
         placeholder: { type: String, default: '' },
         type: { type: String, default: 'text' },
         modelValue: { type: [String, Number], default: '' },

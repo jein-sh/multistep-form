@@ -22,8 +22,6 @@
         <CustomInput
             type="text"
             placeholder="Enter your email"
-            required
-            iconSrc="/assets/img/svg/icon-man.svg"
         >
             <Button type="submit" text="Subscribe" />
         </CustomInput>
